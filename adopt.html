@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Adopt Now!</title>
+  <meta name="handheldfriendly" content="true">
+  <meta name="mobileoptimized" content="240">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+  <main class="register-form pad-t-2" id="main" role="main" tabindex="0">
+    <h2>Adoption Application</h2>
+    <form class="push-0 unit xs-1 gutter wrapper" method="POST" action="https://formspree.io/brow1234@algonquinlive.com">
+      <fieldset>
+        <legend>About you and your home</legend>
+        <div class="grid">
+          <div class="push gutter-1-2 unit xs-1 m-1-2">
+            <label for="first-name">First Name</label>
+            <input id="first-name" aria-label="Input First Name" placeholder="eg. Name" required>
+          </div>
+          <div class="push gutter-1-2 unit xs-1 m-1-2">
+            <label for="last-name">Last Name</label>
+            <input id="last-name" aria-label="Input Surname" placeholder="eg. Surname" required>
+          </div>
+          <div class="push gutter-1-2 unit xs-1 m-1-2">
+            <label for="address">Address</label>
+            <input id="address" aria-label="Imput Address" placeholder="eg. 123 Road St, City Name, State, Postal Code" required>
+          </div>
+          <div class="push gutter-1-2 unit xs-1 m-1-2">
+            <label for="email">Email</label>
+            <input id="email" type="email" aria-label="Input Email" placeholder="yourname@email.com" name="email" required>
+          </div>
+          <div class="push gutter-1-2 unit xs-1">
+            <label for="dog-name">Which dog are you interested in?*</label>
+            <input id="dog-name" aria-label="Which dog?" required>
+          </div>
+          <div class="push gutter-1-2 unit xs-1">
+            <label class="push-1-2 not-bold" for="who-for">Who are you adopting the dog for?</label>
+            <input id="who-me">
+          </div>
+          <fieldset class="push gutter-1-2 unit xs-1">
+            <legend class="push-1-2 not-bold">Any visiting children?</legend>
+            <input type="radio" id="visit-yes" name="visit">
+            <label class="push-r" for="visit-yes">Yes</label>
+            <input type="radio" id="visit-no" name="visit">
+            <label for="visit-no">No</label>
+          </fieldset>
+          <fieldset class="push gutter-1-2 unit xs-1">
+            <legend class="push-1-2 not-bold">Any allergies in the family?</legend>
+            <input type="radio" id="allergies-yes" name="allergies">
+            <label class="push-r" for="allergies-yes">Yes</label>
+            <input type="radio" id="allergies-no" name="allergies">
+            <label for="allergies-no">No</label>
+          </fieldset>
+          <div class="push gutter-1-2 unit xs-1 m-1-2">
+            <label for="no-of-adults">Number of Adults in the home (18+):*</label>
+            <input id="no-of-adults" required>
+          </div>
+          <div class="push gutter-1-2 unit xs-1 m-1-2">
+            <label for="no-of-child">Number of Teens/Children in the home (18-):*</label>
+            <input id="no-of-child" required>
+          </div>
+          <div class="push gutter-1-2 unit xs-1">
+            <label for="purpose">Provide context for your purpose in seeking to adopt (eg. for companionship, protection, etc.). *</label>
+            <textarea id="purpose" required></textarea>
+          </div>
+          <fieldset class="push gutter-1-2 unit xs-1">
+            <legend class="push-1-2 not-bold">Are you planning on any of the following in the next month?</legend>
+            <input type="radio" id="planning-move" name="planning">
+            <label class="push-r" for="planning-move">Moving</label>
+            <input type="radio" id="planning-holiday" name="planning">
+            <label for="planning-holiday">Holiday</label>
+            <input type="radio" id="planning-schedule" name="planning">
+            <label for="planning-schedule">Schedule Change</label>
+            <input type="radio" id="planning-none" name="planning">
+            <label for="planning-none">None</label>
+          </fieldset>
+          <fieldset class="push gutter-1-2 unit xs-1">
+            <legend class="push-1-2 not-bold">Where will your dog stay during the holidays?</legend>
+            <input type="radio" id="holidays-home" name="holidays">
+            <label class="push-r" for="holidays-home">At home care</label>
+            <input type="radio" id="holidays-boarded" name="holidays">
+            <label class="push-r" for="holidays-boarded">Boarding</label>
+            <input type="radio" id="holidays-other" name="holidays">
+            <label class="push-r" for="holidays-other">Other</label>
+          </fieldset>
+          <fieldset class="push gutter-1-2 unit xs-1">
+            <legend class="push-1-2 not-bold">What kind of home do you live in?</legend>
+            <input type="radio" id="home-house" name="home">
+            <label class="push-r" for="home-house">House</label>
+            <input type="radio" id="home-apartment" name="home">
+            <label class="push-r" for="home-apartment">Apartment</label>
+            <input type="radio" id="home-condo" name="home">
+            <label class="push-r" for="home-condo">Condominium</label>
+            <input type="radio" id="home-acre" name="home">
+            <label class="push-r" for="home-acre">Acreage</label>
+          </fieldset>
+          <div class="push gutter-1-2 unit xs-1 m-1-2">
+            <label for="weekday-sched">Describe your weekday schedule, providing context for how many hours the dog might be home alone. *</label>
+            <input id="weekday-sched" required>
+          </div>
+          <div class="push gutter-1-2 unit xs-1 m-1-2">
+            <label for="weekend-sched">Describe your weekend schedule, providing context for how many hours the dog might be home alone. *</label>
+            <input id="weekend-sched" required>
+          </div>
+          <div class="push gutter-1-2 unit xs-1 m-1-2">
+            <label for="exercise-weekday">How many hours of exercise could you provide the dog on weekdays? *</label>
+            <input id="exercise-weekday" required>
+          </div>
+          <div class="push gutter-1-2 unit xs-1 m-1-2">
+            <label for="exercise-weekend">How many hours of exercise could you provide the dog on weekends? *</label>
+            <input id="exercise-weekend" required>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Responsibility</legend>
+        <div class="push gutter-1-2">
+          <label for="responsibility">Who will have primary responsibility for the dog?* (Please provide as much detail as you are able.)</label>
+          <input id="responsibility" required>
+        </div>
+        <fieldset class="push gutter-1-2 unit xs-1">
+          <legend class="push-1-2 not-bold">Has this person had dogs before?</legend>
+          <input type="radio" id="previous-yes" name="previous">
+          <label class="push-r" for="previous-yes">Yes</label>
+          <input type="radio" id="previous-no" name="previous">
+          <label for="previous-no">No</label>
+        </fieldset>
+        <div class="push gutter-1-2 unit xs-1">
+          <label for="previous-details">If yes, what happened to them? (Be specific.)</label>
+          <input id="previous-details">
+        </div>
+        <div class="push gutter-1-2 unit xs-1">
+          <label for="other-pets">Do you have other pets? *</label>
+          <input id="other-pets" required>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Difficulties</legend>
+        <div class="grid">
+          <div class="push gutter-1-2 unit xs-1">
+            <label for="training-experience">Have you trained a dog in the past? Comment on your experience. *</label>
+            <textarea id="training-experience" required></textarea>
+          </div>
+          <div class="push gutter-1-2 unit xs-1">
+            <label for="problems">What problems are you willing to work with?</label>
+            <select id="problems">
+              <option>Select One...</option>
+              <option>Separation anxiety</option>
+              <option>Reaction to other dogs</option>
+              <option>Dog Aggression</option>
+              <option>Excitability</option>
+              <option>Barking</option>
+              <option>Mild Aggression</option>
+              <option>Obedience</option>
+              <option>House training</option>
+              <option>Fearfulness</option>
+              <option>I am not willing to work on any problems</option>
+            </select>
+          </div>
+          <div class="push gutter-1-2 unit xs-1 m-1-2">
+            <label for="cost-vet">Approximately how much do you think it would cost for Vet/medical care for the year? *</label>
+            <input id="cost-vet" required>
+          </div>
+          <div class="push gutter-1-2 unit xs-1 m-1-2">
+            <label for="cost-board">Approximately how much do you think it would cost for boarding for the year? *</label>
+            <input id="cost-board" required>
+          </div>
+          <div class="push gutter-1-2 unit xs-1 m-1-2">
+            <label for="cost-food">Approximately how much do you think it would cost for food for the year? *</label>
+            <input id="cost-food" required>
+          </div>
+          <div class="push gutter-1-2 unit xs-1 m-1-2">
+            <label for="cost-groom">Approximately how much do you think it would cost for grooming for the year? *</label>
+            <input id="cost-groom" required>
+          </div>
+          <div class="push gutter-1-2 unit xs-1">
+            <label for="lifesaving">If your dog required an emergency lifesaving surgery costing $5,000 what would you do?</label>
+            <select id="lifesaving" required>
+              <option>Select One...</option>
+              <option>Monitor the dog to see if it got better</option>
+              <option>Pay for the surgery</option>
+              <option>Humanely euthanize the dog</option>
+              <option>Surrender the dog back to Scottie Kingdom Rescue, Inc.</option>
+            </select>
+          </div>
+          <div class="push-2 gutter-1-2 unit xs-1">
+            <label for="return">Under what circumstances would you return your dog? *</label>
+            <select id="return" required>
+              <option>Select One...</option>
+              <option>Moving</option>
+              <option>Too costly</option>
+              <option>New baby</option>
+              <option>If the dog bit me</option>
+              <option>If the dog bit a stranger/visitor</option>
+              <option>If the dog bit another dog</option>
+              <option>Medical Reasons concerning the dog</option>
+              <option>Not enough time to properly care for the dog's needs</option>
+              <option>Behaviour problem</option>
+              <option>Destructive of the house</option>
+              <option>Accidents in the house</option>
+              <option>I would not return a dog</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Electronic Signature</legend>
+        <div class="grid">
+          <div class="push gutter-1-2 unit xs-1">
+            <label for="electronic-sig">Falsified information will lead to automatic rejection of the application. Scottie Kingdom Rescue, Inc. reserves the right to refuse any applicant. By electronically signing this application, you understand that it is your responsibility to see and evaluate the dog for yourself before aggreeing to adoption. The adoption of a lifelong animal should not be impulsive, but rather a carefully thought out decision, which will ensure a loving lasting relationship. * <span class="micro">(Full Name)</span></label>
+            <textarea id="electronic-sig" required></textarea>
+          </div>
+          <div class="unit xs-1 push gutter-1-2">
+            <label for="date">Date of signature</label>
+            <input type="date" id="date" required>
+          </div>
+        </div>
+      </fieldset>
+      <p class="peta text-center">Thank you for your interest in rescuing one of our special dogs.</p>
+      <div class="text-center">
+        <button class="btn mega push-2" type="submit">Submit form</button>
+      </div>
+    </form>
+    <div class="grid wrapper adopt-footer">
+      <div class="unit xs-1 m-1-2">
+        <h2>Haven't decided which dog you're interested in yet?</h2>
+        <p>Have another look at our current rescues.</p>
+      </div>
+      <div class="unit xs-1 m-1-2 text-center center-content-vertical">
+        <a class="btn mega push-2" href="rescues.html">See all rescues</a>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
