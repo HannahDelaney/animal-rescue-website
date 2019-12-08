@@ -16,16 +16,10 @@ li a {
   list-style-type: none;
 }
 
-/* header {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 2));
-  background-size: 33%, cover;
-
-} */
-
 .banner {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .9)), url("../images/banner.jpg");
   background-size: 100% 100%, cover;
-  border-bottom: 10px solid #484BAA;
+  border-bottom: 10px solid #484baa;
   background-position: center, center;
   background-repeat: no-repeat;
   display: flex;
@@ -36,7 +30,7 @@ li a {
 .banner-adopt {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .9)), url("../images/banner-adopt.jpg");
   background-size: 100% 100%, cover;
-  border-bottom: 10px solid #484BAA;
+  border-bottom: 10px solid #484baa;
   background-position: center, center;
   background-repeat: no-repeat;
   display: flex;
@@ -45,7 +39,7 @@ li a {
 }
 
 .btn {
-  background-color: #484BAA;
+  background-color: #484baa;
   border: none;
   border-radius: 25px;
 }
@@ -116,7 +110,7 @@ footer {
 .copyright {
   color: #fff;
   background-color: #000;
-  border-top: 10px solid #484BAA;
+  border-top: 10px solid #484baa;
   text-align: center;
 }
 
