@@ -1,0 +1,169 @@
+html {
+  font-family: Roboto, sans-serif;
+  /* background-color: #e0ceb3; */
+}
+
+.nav a {
+  text-decoration: none;
+  color: #e0ceb3;
+}
+
+.nav li:hover a {
+  color: #9e8b6f;
+}
+
+li a {
+  list-style-type: none;
+}
+
+/* header {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 2));
+  background-size: 33%, cover;
+
+} */
+
+.banner {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .9)), url("../images/banner.jpg");
+  background-size: 100% 100%, cover;
+  border-bottom: 10px solid #484BAA;
+  background-position: center, center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  min-height: 45vh;
+}
+
+.banner-adopt {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .9)), url("../images/banner-adopt.jpg");
+  background-size: 100% 100%, cover;
+  border-bottom: 10px solid #484BAA;
+  background-position: center, center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  min-height: 45vh;
+}
+
+.btn {
+  background-color: #484BAA;
+  border: none;
+  border-radius: 25px;
+}
+
+.btn:hover {
+  background-color: #9e8b6f;
+}
+
+/* .adopt-btn:hover .adopt-btn a {
+  color: #fff;
+} */
+
+.byline {
+  font-family: Cinzel, serif;
+  text-shadow: 3px 3px 5px #000;
+  color: #fff;
+  /* width: 50%; */
+  /* margin: 0 auto; */
+  text-align: center;
+}
+
+.byline h1 {
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: Cinzel, serif;
+}
+
+.donate {
+  background-color: #e0ceb3;
+}
+
+.center-btn {
+  text-align: center;
+}
+
+.overlay {
+  visibility: hidden;
+}
+
+.available:hover .overlay {
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.available-name {
+  visibility: hidden;
+}
+
+.available:hover .available-name {
+  visibility: visible;
+}
+
+.available:hover a {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .9));
+}
+
+.gutter-wrap {
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+}
+
+footer {
+  background-color: #9e8b6f;
+}
+
+.copyright {
+  color: #fff;
+  background-color: #000;
+  border-top: 10px solid #484BAA;
+  text-align: center;
+}
+
+@media only screen and (min-width: 32em) {
+
+  .banner {
+    min-height: 65vh;
+    background-position: center, bottom;
+  }
+
+  .banner-adopt {
+    min-height: 65vh;
+    background-position: center, top;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner {
+    min-height: 80vh;
+  }
+
+  .banner-adopt {
+    min-height: 80vh;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .gutter-wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .gutter-2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .banner {
+    min-height: 100vh;
+  }
+
+  .banner-adopt {
+    min-height: 100vh;
+  }
+
+}
