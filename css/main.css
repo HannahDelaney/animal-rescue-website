@@ -34,8 +34,6 @@ li:hover a {
   #menutoggle {
     display: block;
     position: relative;
-    top: 50px;
-    right: 50px;
     z-index: 1;
   }
 
@@ -49,21 +47,25 @@ li:hover a {
     color: #9e8b6f;
   }
 
-  #menutoggle input {
+  /* #menutoggle input {
     display: block;
     width: 40px;
     height: 32px;
     position: absolute;
     top: -7px;
     left: -5px;
-    cursor: pointer;
     opacity: 0;
     z-index: 2;
-  }
+  } */
+
+#menutoggle label {
+  width: 56px;
+  display: inline-block;
+}
 
   #menutoggle span {
     display: block;
-    width: 56px;
+    /* width: 56px; */
     height: 4px;
     margin-bottom: 15px;
     position: relative;
