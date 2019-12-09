@@ -44,7 +44,7 @@ nav a:hover {
 }
 
 .nav [type="checkbox"] + label::before {
-  display:none;
+  display: none;
 }
 
 .menutoggle {
