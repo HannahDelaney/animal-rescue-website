@@ -15,19 +15,25 @@
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-  <header class="masthead wrapper gutter-wrap zindex-1 pin-tc pad-t">
+  <ul class="skip-links">
+    <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#footer">Jump to footer</a></li>
+  </ul>
+  <header class="masthead wrapper gutter-wrap zindex-1 pin-tc pad-t" role="banner">
     <div class="grid">
-      <div class="unit xs-1-2 m-1-6">
-        <a class="logo-wrap" href="index.html"><img class="logo" src="images/logo.svg" alt=""></a>
+      <div class="unit xs-1-2 m-1-6 embed">
+        <a class="embed-item embed-1by1" href="index.html"><img class="logo" src="images/logo.svg" alt=""></a>
       </div>
       <div class="unit xs-1-2 m-5-6">
-        <nav class="nav" role="navigation">
-          <div id="menuToggle">
-            <input type="checkbox" />
+        <nav class="nav" role="navigation" id="nav">
+          <div id="menutoggle">
+            <label for="burger"></label>
+            <input id="burger" type="checkbox">
             <span class="tog tog-top"></span>
             <span class="tog tog-middle"></span>
             <span class="tog tog-bottom"></span>
-            <ul id="menu">
+            <ul class="list-group" id="menu">
               <li>
                 <a href="#">About</a>
               </li>
@@ -52,84 +58,91 @@
       </div>
     </div>
   </header>
-  <main>
-    <div class="banner relative">
-      <div class="pin-cb">
-        <h1 class="byline yotta">Welcome to Scottie Kingdom Rescue, Inc!</h1>
-      </div>
-    </div>
-
-
-    <!-- Adoption section -->
-
-    <div class="wrapper gutter-wrap pad-t-2">
-      <h2 class="pad-t-2">Over a Decade of Serving Scottish Terriers in Need</h2>
-      <p>We are based in Dallas, Texas. If your local rescue is not able to help you, please contact us. We happily adopt to all 48 states.</p>
-      <div class="grid">
-        <h2 class="unit xs-1 pad-t-2">Available for Adoption</h2>
-        <div class="unit xs-1 s-1-2 m-1-3">
-          <img class="img-flex" src="images/adopt-me-3.jpg" alt="">
-        </div>
-        <div class="unit xs-1 s-0 m-1-3">
-          <img class="img-flex" src="images/crown-brown.svg" alt="">
-        </div>
-        <div class="unit xs-1 s-1-2 m-1-3">
-          <img class="img-flex" src="images/adopt-me.jpg" alt="">
+  <main role="main" id="main">
+    <section>
+      <div class="banner relative">
+        <div class="pin-cb">
+          <h1 class="byline yotta">Welcome to Scottie Kingdom Rescue, Inc!</h1>
         </div>
       </div>
-      <div class="grid pad-t-2 pad-b-2">
-        <div class="unit xs-1-2 center-btn">
-          <a class="btn" href="rescues.html">See All Rescues</a>
+
+      <!-- Adoption section -->
+
+      <div class="wrapper gutter-wrap pad-t-2">
+        <h2 class="pad-t-2">Over a Decade of Serving Scottish Terriers in Need</h2>
+        <p>We are based in Dallas, Texas. If your local rescue is not able to help you, please contact us. We happily adopt to all 48 states.</p>
+        <div class="grid">
+          <h2 class="unit xs-1 pad-t-2">Available for Adoption</h2>
+          <div class="unit xs-1 s-1-2 m-1-3">
+            <img class="img-flex" src="images/adopt-me-3.jpg" alt="">
+          </div>
+          <div class="unit xs-1 s-0 m-1-3">
+            <img class="img-flex" src="images/crown-brown.svg" alt="">
+          </div>
+          <div class="unit xs-1 s-1-2 m-1-3">
+            <img class="img-flex" src="images/adopt-me.jpg" alt="">
+          </div>
         </div>
-        <div class="unit xs-1-2 center-btn">
-          <a class="btn" href="#">Success Stories</a>
+        <div class="grid pad-t-2 pad-b-2">
+          <div class="unit xs-1-2 center-btn">
+            <a class="btn" href="rescues.html">See All Rescues</a>
+          </div>
+          <div class="unit xs-1-2 center-btn">
+            <a class="btn" href="#">Success Stories</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Donate -->
-    <div class="donate pad-t-2 pad-b-2">
-      <div class="grid wrapper gutter-wrap">
-        <div class="unit xs-1 m-2-3">
-          <h2 class="pad-t-2">FOR The Dogs — NOT for Profit</h2>
-          <p class="pad-b-2">We try very hard not to have to ask for your help very often, but on occasion, the costs of saving a life are too high for us to bear alone. Please consider donating to our special needs dogs, our senior dogs, our long term foster dogs, and dogs that are shown above as needing your immediate help. In many instances, the care they receive can save their life. <strong>Become a part of it.</strong></p>
-        </div>
-        <div class="unit xs-1 m-1-3 center-btn center-content-vertical">
-          <img class="img-flex" src="images/dog-outline-left.svg" alt="">
-          <a class="btn btn-big" href="#">Donate</a>
+      <!-- Donate -->
+
+      <div class="donate pad-t-2 pad-b-2">
+        <div class="grid wrapper gutter-wrap">
+          <div class="unit xs-1 m-2-3">
+            <h2 class="pad-t-2">FOR The Dogs — NOT for Profit</h2>
+            <p class="pad-b-2">We try very hard not to have to ask for your help very often, but on occasion, the costs of saving a life are too high for us to bear alone. Please consider donating to our special needs dogs, our senior dogs, our long term foster dogs, and dogs that are shown above as needing your immediate help. In many instances, the care they receive can save their life. <strong>Become a part of it.</strong></p>
+          </div>
+          <div class="unit xs-1 m-1-3 center-btn center-content-vertical">
+            <img class="img-flex" src="images/dog-outline-left.svg" alt="">
+            <a class="btn btn-big" href="#">Donate</a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+    <article>
 
-    <!-- Support those who support us -->
+      <!-- Support those who support us -->
 
-    <div class="support wrapper gutter-wrap pad-t-2 pad-b-2">
-      <div class="grid push-2">
-        <div class="unit xs-1">
-          <h2>Support those who support us</h2>
-        </div>
-        <div class="unit xs-1-2 m-1-3 l-1-6">
-          <img class="img-flex" src="https://via.placeholder.com/150" alt="">
-        </div>
-        <div class="unit xs-1-2 m-1-3 l-1-6">
-          <img class="img-flex" src="https://via.placeholder.com/150" alt="">
-        </div>
-        <div class="unit xs-1-2 m-1-3 l-1-6">
-          <img class="img-flex" src="https://via.placeholder.com/150" alt="">
-        </div>
-        <div class="unit xs-1-2 m-1-3 l-1-6">
-          <img class="img-flex" src="https://via.placeholder.com/150" alt="">
-        </div>
-        <div class="unit xs-1-2 m-1-3 l-1-6">
-          <img class="img-flex" src="https://via.placeholder.com/150" alt="">
-        </div>
-        <div class="unit xs-1-2 m-1-3 l-1-6">
-          <img class="img-flex" src="https://via.placeholder.com/150" alt="">
+      <div class="support wrapper gutter-wrap pad-t-2 pad-b-2">
+        <div class="grid push-2">
+          <div class="unit xs-1">
+            <h2>Support those who support us</h2>
+          </div>
+          <div class="unit xs-1-2 m-1-3 l-1-6">
+            <img class="img-flex" src="https://via.placeholder.com/150" alt="">
+          </div>
+          <div class="unit xs-1-2 m-1-3 l-1-6">
+            <img class="img-flex" src="https://via.placeholder.com/150" alt="">
+          </div>
+          <div class="unit xs-1-2 m-1-3 l-1-6">
+            <img class="img-flex" src="https://via.placeholder.com/150" alt="">
+          </div>
+          <div class="unit xs-1-2 m-1-3 l-1-6">
+            <img class="img-flex" src="https://via.placeholder.com/150" alt="">
+          </div>
+          <div class="unit xs-1-2 m-1-3 l-1-6">
+            <img class="img-flex" src="https://via.placeholder.com/150" alt="">
+          </div>
+          <div class="unit xs-1-2 m-1-3 l-1-6">
+            <img class="img-flex" src="https://via.placeholder.com/150" alt="">
+          </div>
         </div>
       </div>
-    </div>
+    </article>
   </main>
-  <footer>
+
+  <!-- Footer -->
+
+  <footer role="contentinfo" id="footer">
     <div>
       <div class="grid wrapper gutter-wrap">
         <div class="unit xs-1 m-1-6">
@@ -143,7 +156,7 @@
         </div>
       </div>
       <div class="copyright pad-t-1-2 pad-b-1-2">
-        <p class="micro wrapper gutter-wrap push-0">Copyright © 2004 - 2015  Scottie Kingdom Rescue, Inc. All Rights Reserved.</p>
+        <p class="micro wrapper gutter-wrap push-0">Copyright © 2004 - 2015 Scottie Kingdom Rescue, Inc. All Rights Reserved.</p>
       </div>
     </div>
   </footer>

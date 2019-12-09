@@ -1,6 +1,14 @@
 html {
   font-family: Roboto, sans-serif;
-  /* background-color: #e0ceb3; */
+}
+
+.skip-links a {
+  position: absolute;
+  top: -3em;
+}
+
+.skip-links a:focus {
+  top: 0;
 }
 
 .logo {
@@ -15,14 +23,14 @@ li a {
 }
 
 li:hover a {
-    color: #9e8b6f;
+  color: #9e8b6f;
 }
 
 /* Burger */
 
 @media only screen and (max-width: 59.999em) {
 
-  #menuToggle {
+  #menutoggle {
     display: block;
     position: relative;
     top: 50px;
@@ -30,18 +38,17 @@ li:hover a {
     z-index: 1;
   }
 
-  #menuToggle a {
+  #menutoggle a {
     text-decoration: none;
     color: #e0ceb3;
-
-    transition: color 0.3s ease;
+    transition: color .3s ease;
   }
 
-  #menuToggle a:hover {
+  #menutoggle a:hover {
     color: #9e8b6f;
   }
 
-  #menuToggle input {
+  #menutoggle input {
     display: block;
     width: 40px;
     height: 32px;
@@ -53,7 +60,7 @@ li:hover a {
     z-index: 2;
   }
 
-  #menuToggle span {
+  #menutoggle span {
     display: block;
     width: 56px;
     height: 4px;
@@ -62,31 +69,29 @@ li:hover a {
     background: #e0ceb3;
     border-radius: 3px;
     z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
+    transform-origin: 4px 0;
+    transition: transform .5s, background .5s, opacity .55s ease;
   }
 
-  #menuToggle .tog-top {
+  #menutoggle .tog-top {
     transform-origin: 0% 0%;
   }
 
-  #menuToggle .tog-bottom {
+  #menutoggle .tog-bottom {
     transform-origin: 0% 100%;
   }
 
-  #menuToggle input:checked ~ .tog-top {
+  #menutoggle input:checked ~ .tog-top {
     opacity: 1;
     transform: rotate(45deg);
     background: #9e8b6f;
   }
 
-  #menuToggle input:checked ~ .tog-middle {
+  #menutoggle input:checked ~ .tog-middle {
     opacity: 0;
   }
 
-  #menuToggle input:checked ~ .tog-bottom {
+  #menutoggle input:checked ~ .tog-bottom {
     transform: rotate(-45deg);
     background: #9e8b6f;
   }
@@ -102,7 +107,7 @@ li:hover a {
     transform-origin: 100% 0%;
     transform: translate(0, -100%);
 
-    transition: transform 0.5s;
+    transition: transform .5s;
   }
 
   #menu li {
@@ -110,7 +115,7 @@ li:hover a {
     list-style-type: none;
   }
 
-  #menuToggle input:checked ~ ul {
+  #menutoggle input:checked ~ ul {
     transform: none;
   }
 
@@ -156,6 +161,7 @@ li:hover a {
   background-color: #484baa;
   border: none;
   border-radius: 25px;
+  font-family: Cinzel, serif;
 }
 
 .btn ul li {
@@ -166,16 +172,19 @@ li:hover a {
   background-color: #9e8b6f;
 }
 
-/* .adopt-btn:hover .adopt-btn a {
+.adopt-btn a {
   color: #fff;
-} */
+}
+
+.adopt-btn:hover a {
+  color: #fff;
+  background-color: #9e8b6f;
+}
 
 .byline {
   font-family: Cinzel, serif;
   text-shadow: 3px 3px 5px #000;
   color: #fff;
-  /* width: 50%; */
-  /* margin: 0 auto; */
   text-align: center;
 }
 
