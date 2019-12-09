@@ -31,19 +31,13 @@ li:hover a {
 
 @media only screen and (max-width: 59.999em) {
 
-  #menutoggle {
-    display: block;
-    position: relative;
-    z-index: 1;
-  }
-
-  #menutoggle a {
+  nav a {
     text-decoration: none;
     color: #e0ceb3;
     transition: color .3s ease;
   }
 
-  #menutoggle a:hover {
+  nav a:hover {
     color: #9e8b6f;
   }
 
@@ -58,12 +52,12 @@ li:hover a {
     z-index: 2;
   } */
 
-#menutoggle label {
-  width: 56px;
-  display: inline-block;
-}
+  .menutoggle {
+    width: 56px;
+    display: inline-block;
+  }
 
-  #menutoggle span {
+  .menutoggle span {
     display: block;
     /* width: 56px; */
     height: 4px;
@@ -76,25 +70,25 @@ li:hover a {
     transition: transform .5s, background .5s, opacity .55s ease;
   }
 
-  #menutoggle .tog-top {
+  .menutoggle .tog-top {
     transform-origin: 0% 0%;
   }
 
-  #menutoggle .tog-bottom {
+  .menutoggle .tog-bottom {
     transform-origin: 0% 100%;
   }
 
-  #menutoggle input:checked ~ .tog-top {
+  input:checked ~ .menutoggle .tog-top {
     opacity: 1;
     transform: rotate(45deg);
     background: #9e8b6f;
   }
 
-  #menutoggle input:checked ~ .tog-middle {
+  input:checked ~ .menutoggle .tog-middle {
     opacity: 0;
   }
 
-  #menutoggle input:checked ~ .tog-bottom {
+  input:checked ~ .menutoggle .tog-bottom {
     transform: rotate(-45deg);
     background: #9e8b6f;
   }
@@ -118,7 +112,7 @@ li:hover a {
     list-style-type: none;
   }
 
-  #menutoggle input:checked ~ ul {
+  input:checked ~ ul {
     transform: none;
   }
 
