@@ -13,6 +13,7 @@ html {
 
 .logo {
   width: 100%;
+  max-width: 5rem;
 }
 
 li a {
@@ -210,15 +211,10 @@ h2 {
 }
 
 .available:hover .overlay {
-  background-color: rgba(0, 0, 0, .3);
-}
-
-.available-name {
-  visibility: hidden;
-}
-
-.available:hover .available-name {
   visibility: visible;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  padding: 0 4.25rem;
 }
 
 .available:hover a {
