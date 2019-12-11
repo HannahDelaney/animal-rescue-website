@@ -119,8 +119,6 @@ input:checked ~ #menu {
     justify-content: space-between;
     align-items: center;
     position: static;
-    top: auto;
-    right: auto;
     padding: 0;
     background: transparent;
     transform: none;
@@ -195,12 +193,21 @@ h2 {
   font-family: Cinzel, serif;
 }
 
-.donate {
+.donate,
+.additional {
   background-color: #e0ceb3;
+}
+
+.fern {
+  margin: 0 auto;
 }
 
 .center-btn {
   text-align: center;
+}
+
+.adopt-footer .center-btn {
+  max-width: 350px;
 }
 
 .available .overlay {
