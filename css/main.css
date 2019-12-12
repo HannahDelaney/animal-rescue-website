@@ -193,9 +193,12 @@ h2 {
   font-family: Cinzel, serif;
 }
 
-.donate,
-.additional {
+.donate {
   background-color: #e0ceb3;
+}
+
+.additional {
+  font-family: Cinzel, serif;
 }
 
 .fern {
@@ -204,6 +207,7 @@ h2 {
 
 .center-btn {
   text-align: center;
+  margin: 0 auto;
 }
 
 .adopt-footer .center-btn {
