@@ -23,10 +23,6 @@ li a {
   font-family: Cinzel, serif;
 }
 
-li:hover a {
-  color: #9e8b6f;
-}
-
 /* Burger */
 
 nav {
@@ -158,6 +154,7 @@ input:checked ~ #menu {
   border: none;
   border-radius: 25px;
   font-family: Cinzel, serif;
+  transition: all .3s linear;
 }
 
 .btn ul li {
@@ -168,11 +165,7 @@ input:checked ~ #menu {
   background-color: #9e8b6f;
 }
 
-.adopt-btn a {
-  color: #fff;
-}
-
-.adopt-btn:hover a {
+.adopt-btn:hover li a {
   color: #fff;
   background-color: #9e8b6f;
 }
